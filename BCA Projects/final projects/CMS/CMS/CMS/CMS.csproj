@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BCF127C-877A-4FB4-B2CE-B6D1A9409802}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS</RootNamespace>
+    <AssemblyName>CMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourse.Designer.cs">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddM.Designer.cs">
+      <DependentUpon>AddM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMember.Designer.cs">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeacher.Designer.cs">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllFeesCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllFeesCard.Designer.cs">
+      <DependentUpon>AllFeesCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlurForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlurForm.Designer.cs">
+      <DependentUpon>BlurForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookIssue.Designer.cs">
+      <DependentUpon>BookIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DelCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelCourse.Designer.cs">
+      <DependentUpon>DelCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelM.Designer.cs">
+      <DependentUpon>DelM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCourse.Designer.cs">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStd.Designer.cs">
+      <DependentUpon>EditStd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnqForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnqForm.Designer.cs">
+      <DependentUpon>EnqForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeesCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeesCard.Designer.cs">
+      <DependentUpon>FeesCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeesCardR.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeesCardR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FeesCardReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeesCardReport.Designer.cs">
+      <DependentUpon>FeesCardReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.Designer.cs">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsStdReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsStdReg.Designer.cs">
+      <DependentUpon>InsStdReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member.Designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewBook.Designer.cs">
+      <DependentUpon>NewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBook.Designer.cs">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCourse.Designer.cs">
+      <DependentUpon>SearchCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETeacher.Designer.cs">
+      <DependentUpon>SETeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowStd.Designer.cs">
+      <DependentUpon>ShowStd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StdReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StdReg.Designer.cs">
+      <DependentUpon>StdReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StdReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StdReport.Designer.cs">
+      <DependentUpon>StdReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitBook.Designer.cs">
+      <DependentUpon>SubmitBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeTable.Designer.cs">
+      <DependentUpon>TimeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMember.Designer.cs">
+      <DependentUpon>UpdateMember.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCourse.resx">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddM.resx">
+      <DependentUpon>AddM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMember.resx">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeacher.resx">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllFeesCard.resx">
+      <DependentUpon>AllFeesCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlurForm.resx">
+      <DependentUpon>BlurForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookIssue.resx">
+      <DependentUpon>BookIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelCourse.resx">
+      <DependentUpon>DelCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelM.resx">
+      <DependentUpon>DelM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCourse.resx">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStd.resx">
+      <DependentUpon>EditStd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnqForm.resx">
+      <DependentUpon>EnqForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesCard.resx">
+      <DependentUpon>FeesCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesCardR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FeesCardR.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesCardReport.resx">
+      <DependentUpon>FeesCardReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm.resx">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsStdReg.resx">
+      <DependentUpon>InsStdReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewBook.resx">
+      <DependentUpon>NewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBook.resx">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCourse.resx">
+      <DependentUpon>SearchCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETeacher.resx">
+      <DependentUpon>SETeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowStd.resx">
+      <DependentUpon>ShowStd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StdReg.resx">
+      <DependentUpon>StdReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StdReport.resx">
+      <DependentUpon>StdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitBook.resx">
+      <DependentUpon>SubmitBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeTable.resx">
+      <DependentUpon>TimeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMember.resx">
+      <DependentUpon>UpdateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

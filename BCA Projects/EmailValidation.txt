@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Text.RegularExpressions;
+
+namespace WindowsFormsApplication2
+{
+    public partial class EmailValidation : Form
+    {
+        public EmailValidation()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try { 
+            string pattern = @"^[a-z][a-z|0-9]*([_][a-z|0-9]+)*([.][a-z|" +
+                @"0-9]+([_][a-z]|0-9]+)*)?@[a-z][a-z|0-9|]*\.([a-z]" +
+                @"[a-z|0-9]*(\.[a-z][a-z|0-9]*)?)$";
+            System.Text.RegularExpressions.Match match;
+            match=Regex.Match(textBox1.Text, pattern, RegexOptions.IgnoreCase);
+            if (match.Success)
+            {
+                MessageBox.Show("Success");
+            }
+            else
+            {
+
+                MessageBox.Show("Fail");
+                textBox1.Clear();
+                textBox1.Focus();
+            }
+
+            }catch(Exception g)
+            {
+                MessageBox.Show(g.Message);
+            }
+
+        }
+    }
+}

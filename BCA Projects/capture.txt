@@ -1,0 +1,100 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
+
+
+namespace EntityInformation
+{
+    public partial class Form3 : Form
+    {
+        int n = 0;
+        StringBuilder builder;
+        public Form3()
+        {
+            InitializeComponent();
+            loadcapt();
+            loadcap();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void loadcapt()
+        {
+            Random r = new Random();
+            n = r.Next(1000, 100000);
+            var image = new Bitmap(this.pictureBox1.Width, this.pictureBox1.Height);
+            var font = new Font("Times new Roman", 30, FontStyle.Strikeout, GraphicsUnit.Pixel);
+            var graphics = Graphics.FromImage(image);
+            graphics.DrawString(n.ToString(), font, Brushes.Red, new Point(0, 0));
+            pictureBox1.Image = image;
+        }
+        private void loadcap()
+        {
+            string inp = "abcdeefghijklmnopqrstuvwxyz1324576890ABCDEFGHIJKLMNOPQRSTUVWXYZ@#%^&*";
+             builder = new StringBuilder();
+            Random random = new Random();
+            char ch;
+            for(int i=0;i<7;i++)
+            {
+                ch=inp[random.Next(0,inp.Length)];
+                builder.Append(ch);
+            }
+            var image=new Bitmap(this.pictureBox1.Width,this.pictureBox1.Height);
+            var font=new Font("Arial black",20,FontStyle.Bold,GraphicsUnit.Pixel);
+            var graphics=Graphics.FromImage(image);
+            graphics.DrawString(builder.ToString(),font,Brushes.Red,new Point(0,0));
+            pictureBox2.Image=image;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+         if(textBox1.Text == n.ToString())
+         {
+             MessageBox.Show("match text with text");
+         }
+         else
+         {
+             MessageBox.Show("does not text captch match");
+             loadcapt();
+            // loadcap();
+
+         }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+         if(textBox2.Text==builder.ToString())
+         {
+             MessageBox.Show("match text with match");
+         }
+         else
+         {
+             
+                 MessageBox.Show("does not text captcha match");
+                 loadcapt();
+                 loadcap();
+             }
+         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadcap();
+            loadcapt();
+        }
+        }
+    }
+

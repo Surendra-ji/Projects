@@ -1,0 +1,1 @@
+select * from StdReg where left (RegNo,10002)='BCA' order by RegNo desc

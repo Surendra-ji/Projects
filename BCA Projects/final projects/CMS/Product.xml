@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+  <NewDataSet>
+    <product diffgr:id="product1" msdata:rowOrder="0">
+      <BCost>12000</BCost>
+      <Region>Delhi</Region>
+    </product>
+    <product diffgr:id="product2" msdata:rowOrder="1">
+      <BCost>3000</BCost>
+      <Region>Basti</Region>
+    </product>
+    <product diffgr:id="product3" msdata:rowOrder="2">
+      <BCost>120</BCost>
+      <Region>Gonda</Region>
+    </product>
+    <product diffgr:id="product4" msdata:rowOrder="3">
+      <BCost>12340</BCost>
+      <Region>Gorakhpur</Region>
+    </product>
+  </NewDataSet>
+</diffgr:diffgram>
