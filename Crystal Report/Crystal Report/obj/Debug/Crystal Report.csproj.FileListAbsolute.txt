@@ -1,0 +1,11 @@
+H:\Crystal Report\Crystal Report\bin\Debug\Crystal Report.exe.config
+H:\Crystal Report\Crystal Report\bin\Debug\Crystal Report.exe
+H:\Crystal Report\Crystal Report\bin\Debug\Crystal Report.pdb
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal Report.csprojResolveAssemblyReference.cache
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal_Report.Form1.resources
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal_Report.Properties.Resources.resources
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal Report.csproj.GenerateResource.Cache
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal Report.exe
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal Report.pdb
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal_Report.ItemReport.resources
+H:\Crystal Report\Crystal Report\obj\Debug\Crystal_Report.Form2.resources

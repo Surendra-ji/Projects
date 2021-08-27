@@ -1,0 +1,15 @@
+H:\crystalParameter\crystalParameter\bin\Debug\crystalParameter.exe.config
+H:\crystalParameter\crystalParameter\bin\Debug\crystalParameter.exe
+H:\crystalParameter\crystalParameter\bin\Debug\crystalParameter.pdb
+H:\crystalParameter\crystalParameter\obj\Debug\crystalParameter.csprojResolveAssemblyReference.cache
+H:\crystalParameter\crystalParameter\obj\Debug\crystalParameter.Form1.resources
+H:\crystalParameter\crystalParameter\obj\Debug\crystalParameter.Properties.Resources.resources
+H:\crystalParameter\crystalParameter\obj\Debug\crystalParameter.csproj.GenerateResource.Cache
+H:\crystalParameter\crystalParameter\obj\Debug\crystalParameter.exe
+H:\crystalParameter\crystalParameter\obj\Debug\crystalParameter.pdb
+H:\crystalParameter\crystalParameter\obj\Debug\crystalParameter.Form2.resources
+H:\crystalParameter\crystalParameter\obj\Debug\RdlCompile.cache
+H:\crystalParameter\crystalParameter\obj\Debug\RdlCompile.compiled
+E:\BCA Projects\crystalParameter\crystalParameter\bin\Debug\crystalParameter.exe.config
+E:\BCA Projects\crystalParameter\crystalParameter\obj\Debug\crystalParameter.exe
+E:\BCA Projects\crystalParameter\crystalParameter\obj\Debug\crystalParameter.pdb
