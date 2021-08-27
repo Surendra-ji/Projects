@@ -1,0 +1,78 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+namespace EntityInformation
+{
+    public partial class Form5 : Form
+    {
+        SqlConnection sn;
+        SqlCommand sm;
+        public Form5()
+        {
+            
+            sn = new SqlConnection(@"Data Source=DESKTOP-58C5A5E\SQLEXPRESS;Initial Catalog=Connection;Integrated Security=True");
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sn.Open();
+                sm = new SqlCommand("insert into recall values(@a,@b,@c)",sn);
+                if (radioButton1.Checked == true)
+                    sm.Parameters.AddWithValue("@a", radioButton1.Text);
+                else
+                    sm.Parameters.AddWithValue("@a", radioButton2.Text);
+                if (radioButton3.Checked == true)
+                    sm.Parameters.AddWithValue("@b", radioButton3.Text);
+                else
+                    if(radioButton4.Checked==true)
+                        sm.Parameters.AddWithValue("@b", radioButton4.Text);
+                else
+                 if(radioButton5.Checked==true)
+                     sm.Parameters.AddWithValue("@b", radioButton5.Text);
+                else
+                 if(radioButton6.Checked==true)
+                     sm.Parameters.AddWithValue("@b", radioButton6.Text);
+                
+                 if(radioButton7.Checked==true)
+                     sm.Parameters.AddWithValue("@c", radioButton7.Text);
+                
+                 else
+                     if (radioButton8.Checked == true)
+                         sm.Parameters.AddWithValue("@c", radioButton8.Text);
+                     else
+                         if (radioButton9.Checked == true)
+                             sm.Parameters.AddWithValue("@c", radioButton9.Text);
+                 int r = sm.ExecuteNonQuery();
+                if (r > 0)
+                    MessageBox.Show("record save");
+                else
+                    MessageBox.Show("record not save");
+
+            }
+            catch(Exception p)
+            {
+                MessageBox.Show(p.Message);
+            }
+        }
+    }
+}
